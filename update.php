@@ -3,7 +3,7 @@ include("dbcon.php");
 
 $id = ($_GET['id']);
 
-$sql = "SELECT * FROM `api` WHERE `id`=$id";
+$sql = "SELECT * FROM `api` WHERE `id` = $id";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
